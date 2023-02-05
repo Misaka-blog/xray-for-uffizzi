@@ -15,7 +15,7 @@ TIPS: 可点击仓库的“Use this template”在仓库的原基础上创建私
 ## 部署
 
 * 注册 [Uffizzi](https://www.uffizzi.com/)
-* `entryport.sh` 的 4-11 行 （ShadowSocks 为 18 行） 修改 UUID 或 密码
+* 在 `entryport.sh` 的 4-11 行修改项目变量
 * 项目用到的变量
   | 变量名 | 是否必须 | 默认值 | 备注 |
   | ------------ | ------ | ------ | ------ |
