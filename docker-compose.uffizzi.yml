@@ -1,0 +1,22 @@
+x-uffizzi:
+  ingress:
+    service: app
+    port: 80
+
+services:
+  app:
+    build: .
+    deploy:
+      resources:
+        limits:
+          memory: 4000M
+    restart: always
+    ports:
+      - "80:80"
+    privileged: true
+    depends_on:
+      - app
+    cap_add:
+      - SYS_ADMIN
+volumes:
+  data:
